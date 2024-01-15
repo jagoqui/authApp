@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -19,7 +19,6 @@ import { RouterOutlet } from '@angular/router';
       </div>
     </div>
   `,
-  styleUrl: './authLayout.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrl: './authLayout.component.css'
 })
 export class AuthLayoutComponent { }

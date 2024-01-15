@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-register-page',
@@ -8,7 +8,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     CommonModule,
   ],
   template: `<p>registerPage works!</p>`,
-  styleUrl: './registerPage.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrl: './registerPage.component.css'
 })
 export class RegisterPageComponent { }

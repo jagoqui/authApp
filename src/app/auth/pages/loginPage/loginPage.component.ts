@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
@@ -18,8 +18,7 @@ interface LoginForm{
     CommonModule, ReactiveFormsModule, RouterLink
   ],
   templateUrl: './loginPage.components.html',
-  styleUrl: './loginPage.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrl: './loginPage.component.css'
 })
 export class LoginPageComponent {
   private authSvc: AuthService = inject(AuthService);

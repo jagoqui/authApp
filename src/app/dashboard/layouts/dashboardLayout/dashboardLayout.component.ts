@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import {
-  ChangeDetectionStrategy,
   Component,
   computed,
   inject,
@@ -27,8 +26,7 @@ import { RouterLink } from '@angular/router';
     }
 
   `,
-  styleUrl: './dashboardLayout.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrl: './dashboardLayout.component.css'
 })
 export class DashboardLayoutComponent {
   private authSvc: AuthService = inject(AuthService);
